@@ -75,7 +75,7 @@ class MarkupSitemapXML extends WireData implements Module {
 				$output .= "\n</urlset>";
 				$cache->save($output);
 			}
-			header("Content-Type: text/xml", true, 200);
+			header("Content-Type: application/xml", true, 200);
 			echo $output;
 			exit();
 	}
